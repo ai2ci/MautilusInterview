@@ -136,9 +136,9 @@ $(document).keypress(function(event) {
 });
 
 // action on button click
-//$(document).ready(function(){
-//  $("#pausetoggle").click(function(){
-//    // change state
-//    paused = !paused;
-//  });
-//});
+$(document).ready(function(){
+  $("#pausetoggle").click(function(){
+    // change state
+    paused = !paused;
+  });
+});
