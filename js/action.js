@@ -123,8 +123,7 @@ $(document).keypress(function(event) {
     // get key from event code
     var key = String.fromCharCode(event.keyCode);
     // find all boxes by  pressed letter
-    var catched = $(".letterbox." + key+ "-letter");
-    // 
+    var catched = $(".letterbox." + key.toLowerCase() + "-letter");
     if(catched.length == 1){
       gamepoints--;
     } else if (catched.length == 2) {
@@ -137,9 +136,9 @@ $(document).keypress(function(event) {
 });
 
 // action on button click
-$(document).ready(function(){
-  $("#pausetoggle").click(function(){
-    // change state
-    paused = !paused;
-  });
-});
+//$(document).ready(function(){
+//  $("#pausetoggle").click(function(){
+//    // change state
+//    paused = !paused;
+//  });
+//});
